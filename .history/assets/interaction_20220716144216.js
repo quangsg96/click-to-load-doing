@@ -1,6 +1,9 @@
 // ============ JAVASCRIPT ============
 document.getElementById('btn').addEventListener('click', function() {
+
+
   const xhttp = new XMLHttpRequest();
+  // xhttp.onload = function() {
   xhttp.addEventListener('load', function() {
     document.getElementById('wrapper__part1').innerHTML = this.responseText;
     document.getElementById('wrapper__part2').innerHTML = this.responseText;
@@ -9,7 +12,6 @@ document.getElementById('btn').addEventListener('click', function() {
   xhttp.open("GET", "https://quangsg96.github.io/index2/");
   xhttp.send();
 })
-
 // document.getElementById('btn2').onclick = function() {
 //   const xhttp = new XMLHttpRequest();
 //   xhttp.onload = function() {

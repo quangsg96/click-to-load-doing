@@ -1,6 +1,7 @@
 // ============ JAVASCRIPT ============
 document.getElementById('btn').addEventListener('click', function() {
   const xhttp = new XMLHttpRequest();
+  // xhttp.onload = function() {
   xhttp.addEventListener('load', function() {
     document.getElementById('wrapper__part1').innerHTML = this.responseText;
     document.getElementById('wrapper__part2').innerHTML = this.responseText;
